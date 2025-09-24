@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: #181818;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
-      flex: 1 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 2rem;
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 2.5rem;
-    }
-    p {
-      color: #333;
-      font-size: 1.2rem;
-      max-width: 500px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .welcome-panel {
+            text-align: center;
+            background: white;
+            padding: 32px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        .welcome-panel h1 {
+            margin-bottom: 28px;
+            color: #222;
+            font-size: 2.2rem;
+        }
+        .shortcuts {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .shortcut {
+            display: block;
+            min-width: 120px;
+            margin: 10px 0;
+            padding: 14px 0;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 7px;
+            font-size: 1.1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+            transition: background 0.2s, transform 0.2s;
+            font-weight: 500;
+        }
+        .shortcut:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px) scale(1.04);
+        }
+        .shortcut.apply-now {
+            background-color: #28a745;
+        }
+        .shortcut.apply-now:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-  <main>
-    <p>This is the homepage of your site. Customize this page to make it your own!</p>
-  </main>
+    <div class="welcome-panel">
+        <h1>Welcome to Your Dashboard!</h1>
+        <div class="shortcuts">
+            <a href="#" class="shortcut">Home</a>
+            <a href="#" class="shortcut">Dashboard</a>
+            <a href="#" class="shortcut">Profile</a>
+            <a href="#" class="shortcut">Settings</a>
+            <a href="#" class="shortcut">Logout</a>
+            <a href="#" class="shortcut apply-now">Apply Now</a>
+        </div>
+    </div>
 </body>
 </html>
